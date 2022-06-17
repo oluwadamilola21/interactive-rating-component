@@ -1,0 +1,146 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.125rem;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--veryDarkBlue);
+}
+body, html {
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.inner__container1, .inner__container2 {
+    background-color: var(--darkBlue);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    width: 90%;
+    color: var(--lightGrey);
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--veryDarkBlue);
+}
+h3 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+.text p {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--veryDarkBlue);
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ratings:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.focus {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+}
+
+/* .ratings:focus::before {
+    background-color: var(--orange);
+    color: var(--white);
+} */
+
+button {
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    padding: 0.75rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+.center {
+    text-align: center;
+}
+
+.ratings__here {
+    background-color: var(--veryDarkBlue);
+    width: 100%;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    color: var(--orange);
+    font-size: 0.9rem;
+}
+
+.inner__container2 p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .inner__container1, .inner__container2{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .inner__container1, .inner__container2 {
+        width: 30%;
+    }
+}
